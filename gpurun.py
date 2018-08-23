@@ -21,7 +21,7 @@ def main():
     memory_used = [(gpu.memory_used, gpu.index) for gpu in gpus if is_free(gpu)]
 
     if len(memory_used) < n_gpus:
-        print("sorry, there's not enough free gpus right now :(")
+        print("sorry, there are not enough free gpus right now :(")
         exit(1)
 
     memory_used.sort()
